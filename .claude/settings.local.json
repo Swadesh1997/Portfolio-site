@@ -12,7 +12,8 @@
       "Read(//c/Users/swade/AppData/Local/Programs/Python/**)",
       "Read(//c/Program Files/**)",
       "Read(//c/Windows/**)",
-      "Bash(git config *)"
+      "Bash(git config *)",
+      "Bash(ssh-keygen -t ed25519 -C \"swadeshmollah@gmail.com\" -f /c/Users/swade/.ssh/id_ed25519 -N \"\" -q)"
     ]
   }
 }

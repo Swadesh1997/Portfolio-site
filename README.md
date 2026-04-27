@@ -1,22 +1,38 @@
-# CODING AGENTS: READ THIS FIRST
+# Ponuel Mollah Swadesh — Portfolio
 
-This is a **handoff bundle** from Claude Design (claude.ai/design).
+Personal portfolio site for **Ponuel Mollah Swadesh**, ICT & Digital Development Officer.
 
-A user mocked up designs in HTML/CSS/JS using an AI design tool, then exported this bundle so a coding agent can implement the designs for real.
+Static HTML/CSS/JS — no build step, no framework runtime, no dependencies. Open `index.html` and it works.
 
-## What you should do — IMPORTANT
+## Local preview
 
-**Read `ponuel-porfolio/project/Portfolio.html` in full.** The user had this file open when they triggered the handoff, so it's almost certainly the primary design they want built. Read it top to bottom — don't skim. Then **follow its imports**: open every file it pulls in (shared components, CSS, scripts) so you understand how the pieces fit together before you start implementing.
+Any static HTTP server works. Two options:
 
-**If anything is ambiguous, ask the user to confirm before you start implementing.** It's much cheaper to clarify scope up front than to build the wrong thing.
+```bash
+# Python (built-in)
+python -m http.server 8000
 
-## About the design files
+# Node (no install)
+npx --yes serve .
+```
 
-The design medium is **HTML/CSS/JS** — these are prototypes, not production code. Your job is to **recreate them pixel-perfectly** in whatever technology makes sense for the target codebase (React, Vue, native, whatever fits). Match the visual output; don't copy the prototype's internal structure unless it happens to fit.
+Then open http://localhost:8000.
 
-**Don't render these files in a browser or take screenshots unless the user asks you to.** Everything you need — dimensions, colors, layout rules — is spelled out in the source. Read the HTML and CSS directly; a screenshot won't tell you anything they don't.
+## Project layout
 
-## Bundle contents
+| File | What it is |
+|---|---|
+| `index.html` | Production page — sections inlined, vanilla JS for reveal/filter/dot-nav/form. |
+| `styles.css` | All styling. CSS custom properties drive accent + spacing. |
+| `assets/` | Profile photo, gallery images, resume PDF. |
+| `app.jsx`, `components.jsx`, `data.js`, `tweaks-panel.jsx` | Original Claude Design prototype source. Kept as a reference for the design intent — **not loaded by `index.html`**. |
+| `uploads/` | Original asset uploads from the design tool. |
+| `.claude/launch.json` | Dev-server configs for Claude Code's preview panel. |
 
-- `ponuel-porfolio/README.md` — this file
-- `ponuel-porfolio/project/` — the `Ponuel_Porfolio` project files (HTML prototypes, assets, components)
+## Deployment
+
+Configured to deploy to **Vercel** from `main`. Pushing to `main` triggers an automatic redeploy.
+
+## Credits
+
+Design prototyped in Claude Design (claude.ai/design); production page hand-written for performance and zero runtime dependencies.
