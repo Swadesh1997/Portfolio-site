@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /old-site/
+
+Sitemap: https://portfolio-site-bay-chi.vercel.app/sitemap.xml
