@@ -1,669 +1,766 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-GB">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ponuel Mollah Swadesh — ICT & Digital Development</title>
-  <meta name="description" content="Portfolio of Ponuel Mollah Swadesh — ICT & Digital Development Officer building digital solutions for impact, governance, and service delivery." />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ponuel Mollah Swadesh | ICT and Digital Development, Research Portfolio</title>
+<meta name="description" content="Portfolio of Ponuel Mollah Swadesh: ICT and digital development officer with a BSc in Computer Science and Engineering, building data systems and digital tools for public services. Research interests, papers, projects and CV.">
+<meta name="theme-color" content="#07090C">
+<meta property="og:title" content="Ponuel Mollah Swadesh | Research Portfolio">
+<meta property="og:description" content="Portfolio of Ponuel Mollah Swadesh: ICT and digital development officer with a BSc in Computer Science and Engineering, building data systems and digital tools for public services. Research interests, papers, projects and CV.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2307090C'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='15' font-weight='700' text-anchor='middle' fill='%232CD4C6'%3EPS%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#07090C;color:#E6EDF3;font-family:'IBM Plex Sans',system-ui,sans-serif}
+html{scroll-behavior:smooth}
+a{color:inherit;text-decoration:none}
+a:hover{color:#2CD4C6}
+a:focus-visible,button:focus-visible{outline:2px solid #2CD4C6;outline-offset:3px}
+section{scroll-margin-top:96px}
+button{font-family:inherit}
+</style>
 </head>
 <body>
+<div style="width: 100%; box-sizing: border-box; background: #07090C; color: #E6EDF3; font-family: 'Inter', system-ui, sans-serif; font-size: 17px; line-height: 1.65">
 
-  <!-- ===== Top bar ===== -->
-  <header class="topbar">
-    <div class="brand">
-      <span class="dot"></span>
-      <span>PMS · ICT/Dev · BD</span>
-    </div>
-    <nav class="topbar-nav" aria-label="Primary">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Work</a>
-      <a href="#publications">Research</a>
-      <a href="#contact">Contact</a>
-      <a href="assets/Resume.pdf" class="cta" download target="_blank" rel="noopener noreferrer">
-        <span>Resume</span>
-        <span aria-hidden="true">↓</span>
-      </a>
-    </nav>
-  </header>
 
-  <!-- ===== Floating dot nav ===== -->
-  <nav class="dot-nav" aria-label="Section navigation">
-    <button data-target="hero" aria-label="Top"><span class="label">Top</span></button>
-    <button data-target="about" aria-label="About"><span class="label">About</span></button>
-    <button data-target="skills" aria-label="Skills"><span class="label">Skills</span></button>
-    <button data-target="experience" aria-label="Experience"><span class="label">Experience</span></button>
-    <button data-target="projects" aria-label="Projects"><span class="label">Projects</span></button>
-    <button data-target="publications" aria-label="Publications"><span class="label">Publications</span></button>
-    <button data-target="certifications" aria-label="Certs"><span class="label">Certs</span></button>
-    <button data-target="contact" aria-label="Contact"><span class="label">Contact</span></button>
-  </nav>
+<header style="position: sticky; top: 0; z-index: 20; background: rgba(7,9,12,0.86); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.09); padding-top: env(safe-area-inset-top, 0px)">
+<div style="max-width: 1240px; margin: 0 auto; padding: 14px clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 28px; box-sizing: border-box">
+<a href="#home" style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: 0.06em; display: flex; align-items: center; gap: 10px; min-height: 44px"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: #4ADE80; box-shadow: 0 0 10px #4ADE80"></span>PMS · ICT/Dev · BD</a>
+<nav style="display: flex; flex-wrap: wrap; align-items: center; gap: 2px 16px; padding: 2px 8px 2px 22px; border: 1px solid rgba(255,255,255,0.09); border-radius: 28px; background: rgba(11,15,20,0.6); font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.07em; text-transform: uppercase; color: #97A3B3"><a href="#about" style="display: flex; align-items: center; min-height: 44px">About</a><a href="#research" style="display: flex; align-items: center; min-height: 44px">Interests</a><a href="#publications" style="display: flex; align-items: center; min-height: 44px">Publications</a><a href="#projects" style="display: flex; align-items: center; min-height: 44px">Key Projects</a><a href="#education" style="display: flex; align-items: center; min-height: 44px">Education</a><a href="#certifications" style="display: flex; align-items: center; min-height: 44px">Certifications</a><a href="#experience" style="display: flex; align-items: center; min-height: 44px">Experience</a><a href="#contact" style="display: flex; align-items: center; min-height: 44px">Contact</a><a href="assets/Swadesh_Ponuel_CV_Academic.pdf" target="_blank" rel="noopener" style="display: flex; align-items: center; min-height: 44px; padding: 0px 18px; border-radius: 22px; border: 1px solid #2CD4C6; color: #2CD4C6; font-weight: 500">Resume ↓</a></nav>
+</div>
+</header>
 
-  <main>
 
-    <!-- ===== HERO ===== -->
-    <section id="hero" class="hero" data-screen-label="01 Hero">
-      <div class="wrap hero-grid">
-        <div class="hero-text">
-          <div class="reveal greeting">
-            <span class="caret mono">▍</span>
-            <span class="mono">whoami → introducing</span>
-          </div>
-          <h1 class="reveal delay-1">
-            Ponuel Mollah<br />
-            <span class="accent">Swadesh.</span>
-          </h1>
-          <div class="reveal delay-2 role">
-            ICT &amp; Digital Development Officer
-          </div>
-          <p class="reveal delay-3 tagline">
-            Building digital solutions for impact, governance, and service delivery across the WASH and development sectors.
-          </p>
-          <div class="reveal delay-4 ctas">
-            <a href="#projects" class="btn primary">
-              View projects <span class="arrow mono">→</span>
-            </a>
-            <a href="assets/Resume.pdf" class="btn" download target="_blank" rel="noopener noreferrer">
-              Download resume <span class="arrow mono">↓</span>
-            </a>
-            <a href="#contact" class="btn">Contact</a>
-          </div>
-          <div class="reveal delay-4 hero-stats">
-            <div class="stat"><span class="num">4<span class="plus">+</span></span><span class="lbl">Years experience</span></div>
-            <div class="stat"><span class="num">10<span class="plus">+</span></span><span class="lbl">Shipped projects</span></div>
-            <div class="stat"><span class="num">&nbsp;<span class="plus">+</span></span><span class="lbl"></span></div>
-          </div>
-        </div>
-        <div class="reveal delay-2 hero-portrait">
-          <span class="tag top mono">// portrait_2024.png</span>
-          <div class="frame">
-            <img src="assets/profile.png" alt="Ponuel Mollah Swadesh" />
-            <div class="scan"></div>
-          </div>
-          <div class="corner tl"></div>
-          <div class="corner tr"></div>
-          <div class="corner bl"></div>
-          <div class="corner br"></div>
-          <span class="tag bot mono">DHA · BD</span>
-        </div>
-      </div>
-      <div class="scroll-cue">
-        <span>scroll</span>
-        <span class="line"></span>
-      </div>
-    </section>
+<section id="home" style="background-color: #07090C; background-image: linear-gradient(rgba(255,255,255,0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px); background-size: 64px 64px">
+<div style="max-width: 1240px; margin: 0 auto; padding: 80px clamp(20px, 4vw, 48px) 88px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 48px 64px">
+<div style="flex: 1 1 460px; min-width: 0; max-width: 900px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: 0.1em; color: #2CD4C6; border-left: 2px solid #2CD4C6; padding-left: 10px; margin-bottom: 28px">whoami → introducing</div>
+<h1 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: clamp(44px, 7vw, 92px); line-height: 1.02; letter-spacing: -0.035em">Ponuel Mollah <span style="color: #2CD4C6">Swadesh.</span></h1>
+<div style="margin-top: 20px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 14px; letter-spacing: 0.04em; color: #8794A5">// ICT and Digital Development Officer, WaterAid Bangladesh</div>
+<p style="margin: 20px 0 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 500; font-size: clamp(20px, 2.4vw, 28px); line-height: 1.3; color: #E6EDF3">I build digital tools and data systems for public services.</p>
+<p style="margin: 24px 0 0; max-width: 680px; color: #97A3B3">I am a Computer Science and Engineering graduate with more than four years of experience working in ICT and digital development roles, most recently at WaterAid Bangladesh, building apps, dashboards and GIS workflows with municipalities, water utilities and community teams. Now I want to turn that field experience into research.</p>
+<div style="margin-top: 36px; display: flex; flex-wrap: wrap; gap: 12px">
+<a href="#projects" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 2px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; border: 1px solid #2CD4C6; color: #2CD4C6; background: rgba(44,212,198,0.08)">View projects →</a>
+<a href="#publications" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 2px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; border: 1px solid rgba(255,255,255,0.14)">Read papers</a>
+<a href="assets/Swadesh_Ponuel_CV_Academic.pdf" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 2px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; border: 1px solid rgba(255,255,255,0.14)">Download CV ↓</a>
+<a href="mailto:swadeshmollah@gmail.com" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 2px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; border: 1px solid rgba(255,255,255,0.14)">Contact</a>
+</div>
+<div style="margin-top: 28px; display: flex; flex-wrap: wrap; gap: 6px 22px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 14px; font-weight: 500">
+<a href="https://www.linkedin.com/in/ponuel-mollah-swadesh-499424177/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; min-height: 44px">LinkedIn ↗</a>
+<a href="https://github.com/Swadesh1997" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; min-height: 44px">GitHub ↗</a>
+<a href="https://www.researchgate.net/profile/Ponuel-Swadesh" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; min-height: 44px">ResearchGate ↗</a>
+</div>
+</div>
+</div>
+</section>
 
-    <!-- ===== ABOUT ===== -->
-    <section id="about" data-screen-label="02 About">
-      <div class="wrap">
-        <div class="reveal">
-          <div class="section-label"><span class="num">01 /</span><span>About</span></div>
-        </div>
-        <h2 class="reveal delay-1 section-title">
-          Engineering at the intersection of <em style="font-family: 'JetBrains Mono', monospace; font-style: normal; color: var(--accent);">code</em> and <em style="font-style: normal;">community.</em>
-        </h2>
-        <div class="about-grid">
-          <div class="reveal delay-2 about-text">
-            <p>I'm an <strong>ICT &amp; Digital Development professional</strong>.</p>
-            <p>My day-to-day spans <strong>ICT &amp; Digital Development professional</strong> — building tools that strengthen governance, sharpen service delivery, and bring stakeholders into the loop.</p>
-            <p>Beyond the code, I lead capacity-building workshops, coordinate with municipal partners and IT agencies, and translate field needs into sustainable digital products.</p>
-          </div>
-          <div class="reveal delay-3 about-side">
-            <div class="row"><span class="k">Based</span><span class="v">Dhaka, BD</span></div>
-            <div class="row"><span class="k">Sector</span><span class="v">ICT/ Dev</span></div>
-            <div class="row"><span class="k">Education</span><span class="v">BSc CSE, BRAC</span></div>
-            <div class="row"><span class="k">CGPA</span><span class="v">3.71 / 4.00</span></div>
-            <div class="row"><span class="k">IELTS</span><span class="v">7.0</span></div>
-            <div class="row"><span class="k">Status</span><span class="v" style="color: var(--accent);">● Open to talk</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- ===== SKILLS ===== -->
-    <section id="skills" data-screen-label="03 Skills">
-      <div class="wrap">
-        <div class="reveal">
-          <div class="section-label"><span class="num">02 /</span><span>Stack</span></div>
-        </div>
-        <h2 class="reveal delay-1 section-title">Toolbelt — kept sharp.</h2>
-        <p class="reveal delay-2 section-sub">
-          Five practice areas, each one shipped against a real deadline. Bars are calibration, not bragging — they reflect the depth I'd bring to an unfamiliar problem.
-        </p>
-        <div class="reveal delay-2 skills-grid">
+<section style="background: #0B0F14; border-top: 1px solid rgba(255,255,255,0.09); border-bottom: 1px solid rgba(255,255,255,0.09)">
+<div style="max-width: 1240px; margin: 0 auto; padding: 44px clamp(20px, 4vw, 48px); box-sizing: border-box; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px">
+<div>
+<div style="font-family: 'Inter', system-ui, sans-serif; font-weight: 700; font-size: 44px; line-height: 1.1; letter-spacing: -0.02em">3.71<span style="font-size: 22px; color: #8794A5"> / 4.00</span></div>
+<div style="margin-top: 6px; color: #8794A5; font-size: 15px">CGPA in BSc CSE, graduated with High Distinction</div>
+</div>
+<div>
+<div style="font-family: 'Inter', system-ui, sans-serif; font-weight: 700; font-size: 44px; line-height: 1.1; letter-spacing: -0.02em">4+</div>
+<div style="margin-top: 6px; color: #8794A5; font-size: 15px">years in ICT and digital development roles</div>
+</div>
 
-          <div class="skill-card">
-            <div class="head">
-              <span class="label">Programming &amp; Frameworks</span>
-              <span class="num">// 01</span>
-            </div>
-            <div class="skill-bar">
-              <div class="item"><div class="top"><span class="name">Java</span><span class="pct">85</span></div><div class="track"><div class="fill" style="--w: 0.85;"></div></div></div>
-              <div class="item"><div class="top"><span class="name">Kotlin</span><span class="pct">85</span></div><div class="track"><div class="fill" style="--w: 0.85;"></div></div></div>
-              <div class="item"><div class="top"><span class="name">Python</span><span class="pct">80</span></div><div class="track"><div class="fill" style="--w: 0.8;"></div></div></div>
-              <div class="item"><div class="top"><span class="name">Flutter</span><span class="pct">86</span></div><div class="track"><div class="fill" style="--w: 0.86;"></div></div></div>
-              <div class="item"><div class="top"><span class="name">JavaScript (basic)</span><span class="pct">60</span></div><div class="track"><div class="fill" style="--w: 0.6;"></div></div></div>
-            </div>
-          </div>
+<div>
+<div style="font-family: 'Inter', system-ui, sans-serif; font-weight: 700; font-size: 44px; line-height: 1.1; letter-spacing: -0.02em">7</div><div style="margin-top: 6px; color: #8794A5; font-size: 15px">research outputs: 1 published, 2 accepted, 2 under review, 2 working papers</div>
 
-          <div class="skill-card">
-            <div class="head">
-              <span class="label">Mobile App Development</span>
-              <span class="num">// 02</span>
-            </div>
-            <div class="skill-bar">
-              <div class="item"><div class="top"><span class="name">Android Studio</span><span class="pct">90</span></div><div class="track"><div class="fill" style="--w: 0.9;"></div></div></div>
-              <div class="item"><div class="top"><span class="name">Xcode</span><span class="pct">70</span></div><div class="track"><div class="fill" style="--w: 0.7;"></div></div></div>
-              <div class="item"><div class="top"><span class="name">Apple Developer Program</span><span class="pct">85</span></div><div class="track"><div class="fill" style="--w: 0.85;"></div></div></div>
-              <div class="item"><div class="top"><span class="name">Google Play Console</span><span class="pct">88</span></div><div class="track"><div class="fill" style="--w: 0.88;"></div></div></div>
-            </div>
-          </div>
+</div>
+</div>
+</section>
 
-          <div class="skill-card">
-            <div class="head">
-              <span class="label">Web &amp; CMS</span>
-              <span class="num">// 03</span>
-            </div>
-            <div class="skill-bar">
-              <div class="item"><div class="top"><span class="name">HTML / PHP</span><span class="pct">85</span></div><div class="track"><div class="fill" style="--w: 0.85;"></div></div></div>
-              <div class="item"><div class="top"><span class="name">Laravel</span><span class="pct">80</span></div><div class="track"><div class="fill" style="--w: 0.8;"></div></div></div>
-              <div class="item"><div class="top"><span class="name">WordPress / Drupal</span><span class="pct">90</span></div><div class="track"><div class="fill" style="--w: 0.9;"></div></div></div>
-              <div class="item"><div class="top"><span class="name">Webflow</span><span class="pct">85</span></div><div class="track"><div class="fill" style="--w: 0.85;"></div></div></div>
-              <div class="item"><div class="top"><span class="name">Next.js</span><span class="pct">70</span></div><div class="track"><div class="fill" style="--w: 0.7;"></div></div></div>
-              <div class="item"><div class="top"><span class="name">PhpStorm</span><span class="pct">74</span></div><div class="track"><div class="fill" style="--w: 0.74;"></div></div></div>
-            </div>
-          </div>
 
-          <div class="skill-card">
-            <div class="head">
-              <span class="label">Databases</span>
-              <span class="num">// 04</span>
-            </div>
-            <div class="skill-bar">
-              <div class="item"><div class="top"><span class="name">MySQL</span><span class="pct">84</span></div><div class="track"><div class="fill" style="--w: 0.84;"></div></div></div>
-              <div class="item"><div class="top"><span class="name">PostgreSQL</span><span class="pct">85</span></div><div class="track"><div class="fill" style="--w: 0.85;"></div></div></div>
-              <div class="item"><div class="top"><span class="name">MongoDB</span><span class="pct">72</span></div><div class="track"><div class="fill" style="--w: 0.72;"></div></div></div>
-              <div class="item"><div class="top"><span class="name">Google Firebase</span><span class="pct">86</span></div><div class="track"><div class="fill" style="--w: 0.86;"></div></div></div>
-            </div>
-          </div>
 
-          <div class="skill-card">
-            <div class="head">
-              <span class="label">AI &amp; Media</span>
-              <span class="num">// 05</span>
-            </div>
-            <div class="skill-bar">
-              <div class="item"><div class="top"><span class="name">AI Tooling &amp; Prompting</span><span class="pct">90</span></div><div class="track"><div class="fill" style="--w: 0.9;"></div></div></div>
-              <div class="item"><div class="top"><span class="name">Generative AI Workflows</span><span class="pct">88</span></div><div class="track"><div class="fill" style="--w: 0.88;"></div></div></div>
-              <div class="item"><div class="top"><span class="name">LLM Integration &amp; Chatbots</span><span class="pct">84</span></div><div class="track"><div class="fill" style="--w: 0.84;"></div></div></div>
-              <div class="item"><div class="top"><span class="name">Audio Editing</span><span class="pct">85</span></div><div class="track"><div class="fill" style="--w: 0.85;"></div></div></div>
-              <div class="item"><div class="top"><span class="name">Video Editing</span><span class="pct">85</span></div><div class="track"><div class="fill" style="--w: 0.85;"></div></div></div>
-            </div>
-          </div>
 
-          <div class="skill-card">
-            <div class="head">
-              <span class="label">Tools &amp; Process</span>
-              <span class="num">// 06</span>
-            </div>
-            <div class="skill-bar">
-              <div class="item"><div class="top"><span class="name">MS 365 / Power BI</span><span class="pct">92</span></div><div class="track"><div class="fill" style="--w: 0.92;"></div></div></div>
-              <div class="item"><div class="top"><span class="name">Power Automate</span><span class="pct">85</span></div><div class="track"><div class="fill" style="--w: 0.85;"></div></div></div>
-              <div class="item"><div class="top"><span class="name">Jira / Trello</span><span class="pct">88</span></div><div class="track"><div class="fill" style="--w: 0.88;"></div></div></div>
-              <div class="item"><div class="top"><span class="name">Canva</span><span class="pct">86</span></div><div class="track"><div class="fill" style="--w: 0.86;"></div></div></div>
-            </div>
-          </div>
 
-        </div>
-      </div>
-    </section>
 
-    <!-- ===== EXPERIENCE ===== -->
-    <section id="experience" data-screen-label="04 Experience">
-      <div class="wrap">
-        <div class="reveal">
-          <div class="section-label"><span class="num">03 /</span><span>Experience</span></div>
-        </div>
-        <h2 class="reveal delay-1 section-title">A short, deliberate timeline.</h2>
-        <div class="reveal delay-2 timeline">
 
-          <div class="tl-item">
-            <div class="meta-row">
-              <span class="date">January 2023 — Present</span>
-              <span class="sep">·</span>
-              <span>Full-time · Previously Young Professional &amp; Associate Officer</span>
-            </div>
-            <h3>ICT &amp; Digital Development Officer</h3>
-            <div class="org">WaterAid Bangladesh</div>
-            <div class="tl-groups">
-              <div class="tl-group">
-                <h4 class="tl-group-head">Leadership</h4>
-                <ul><li>Supervise the ICT team and plan digital tasks across programs.</li></ul>
-              </div>
-              <div class="tl-group">
-                <h4 class="tl-group-head">Website development &amp; management</h4>
-                <ul>
-                  <li>Designed, developed, and managed multiple organizational websites and platforms — WaterAid Bangladesh (Drupal), MHM Platform, WaterWomen, INGO Forum, and conference websites.</li>
-                  <li>Administered and customized CMS, managed content workflows, and optimized performance and usability.</li>
-                </ul>
-              </div>
-              <div class="tl-group">
-                <h4 class="tl-group-head">Mobile application development &amp; management</h4>
-                <ul><li>Developed and maintained Android and iOS applications for menstrual hygiene, safeguarding/GBV knowledge and reporting, customer service, and digital event participation.</li></ul>
-              </div>
-              <div class="tl-group">
-                <h4 class="tl-group-head">Digital systems &amp; MIS development</h4>
-                <ul><li>Implemented MIS and dashboards including the Vendor Enlistment Platform, IMIS for Lalmonirhat Municipality, water quality and distribution monitoring, and internal IT asset requisition systems.</li></ul>
-              </div>
-              <div class="tl-group">
-                <h4 class="tl-group-head">Digital event &amp; conference management</h4>
-                <ul><li>Led digitization of large-scale events including the Toilet Conference 2025 — managing websites, online registration systems, mobile apps, and digital check-in processes.</li></ul>
-              </div>
-              <div class="tl-group">
-                <h4 class="tl-group-head">Stakeholder coordination</h4>
-                <ul><li>Coordinated with internal teams, municipalities, INGOs, and external IT vendors to align digital initiatives with organizational goals, ensure quality delivery, system integration, and licensing compliance.</li></ul>
-              </div>
-            </div>
-          </div>
 
-          <div class="tl-item">
-            <div class="meta-row">
-              <span class="date">Jan 2022 — Dec 2022</span>
-              <span class="sep">·</span>
-              <span>Full-time</span>
-            </div>
-            <h3>Junior IT Executive</h3>
-            <div class="org">FrogBID, Khulna</div>
-            <ul>
-              <li>Provided IT support, troubleshooting, and network/system maintenance for end-users.</li>
-              <li>Assisted with setup and configuration of IT infrastructure.</li>
-              <li>Collaborated with clients and internal teams to translate requirements into technical solutions.</li>
-            </ul>
-          </div>
+<section id="about" style="background: #07090C">
+<div style="max-width: 1240px; margin: 0 auto; padding: 88px clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 56px">
+<div style="flex: 0 1 380px; min-width: 260px; max-width: 100%; align-self: flex-start">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #8794A5; margin-bottom: 12px">// portrait.jpg</div>
+<div style="position: relative; width: 100%; max-width: 380px"><span aria-hidden="true" style="position: absolute; width: 22px; height: 22px; border-color: #2CD4C6; border-style: solid; top: -8px; right: -8px; border-width: 2px 2px 0 0"></span><span aria-hidden="true" style="position: absolute; width: 22px; height: 22px; border-color: #2CD4C6; border-style: solid; bottom: -8px; left: -8px; border-width: 0 0 2px 2px"></span>
+<div style="width: 100%; aspect-ratio: 4 / 5; border-radius: 2px; overflow: hidden; border: 1px solid rgba(255,255,255,0.14); background: #1A3FB5">
+<img src="assets/portrait.jpg" alt="Portrait of Ponuel Mollah Swadesh in a dark suit and glasses" width="700" height="875" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 0%">
+</div></div>
+<div style="margin-top: 20px; display: flex; flex-direction: column; gap: 16px; width: 100%; max-width: 380px">
+<div style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 20px 22px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: #8794A5">Currently</div>
+<div style="margin-top: 6px; font-weight: 500">ICT and Digital Development Officer, WaterAid Bangladesh</div>
+</div>
+<div style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 20px 22px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: #8794A5">Languages</div>
+<div style="margin-top: 6px; font-weight: 500">Bangla (native). English, IELTS 7.0 overall</div>
+</div>
+</div>
+</div>
+<div style="flex: 2 1 460px; min-width: 0">
+<p style="margin: 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 14px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #2CD4C6">01 / About</p>
+<h2 style="margin: 10px 0 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: clamp(30px, 4vw, 44px); line-height: 1.15; letter-spacing: -0.02em">From building apps in the field to asking research questions about them</h2>
+<p style="margin: 28px 0 0; color: #97A3B3">I studied Computer Science and Engineering at BRAC University on a merit scholarship. I graduated in 2021 with High Distinction and a CGPA of 3.71. My undergraduate research on gene expression classification was published at IEEE ICMLC 2021.</p>
+<p style="margin: 18px 0 0; color: #97A3B3">At WaterAid Bangladesh I look after the apps and data systems that program teams rely on. They range from a menstrual health app with more than 45,000 registered users to a customer service platform for Chattogram WASA. That work showed me what gets in the way of data-driven decisions in low-resource settings: poor data quality, systems that do not connect, small teams and unequal access.</p>
+<p style="margin: 18px 0 0; color: #97A3B3">My research questions come from there. How can machine learning and spatial data help municipalities plan sanitation? How do we build health and service apps that people can trust and use? I want to study these questions properly, with a supervisor and a lab behind me.</p>
+</div>
+</div>
+</section><section id="research" style="background: #0B0F14">
+<div style="max-width: 1240px; margin: 0 auto; padding: 88px clamp(20px, 4vw, 48px); box-sizing: border-box">
+<p style="margin: 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 14px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #2CD4C6">02 / Interests</p>
+<h2 style="margin: 10px 0 0; max-width: 760px; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: clamp(30px, 4vw, 44px); line-height: 1.15; letter-spacing: -0.02em">Eight areas where my project work and my papers meet</h2>
+<div style="margin-top: 44px; display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 22px">
 
-          <div class="tl-item">
-            <div class="meta-row">
-              <span class="date">Aug 2022 — Dec 2022</span>
-              <span class="sep">·</span>
-              <span>Part-time</span>
-            </div>
-            <h3>Junior Content Writer — Technology</h3>
-            <div class="org">10Ways Web Properties, Khulna</div>
-            <ul>
-              <li>Researched and developed long-form content on emerging technology topics.</li>
-            </ul>
-          </div>
+<div style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; font-weight: 500; color: #2CD4C6">01</div>
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3">Data-driven decision support</h3>
+<p style="margin: 0; color: #97A3B3; font-size: 16px">Forecasting soil moisture to cut irrigation costs, and GIS workflows that help municipalities plan sanitation.</p>
+<a href="#publications" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; font-size: 15px; color: #2CD4C6">See the papers →</a>
+</div>
 
-        </div>
-      </div>
-    </section>
+<div style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; font-weight: 500; color: #2CD4C6">02</div>
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3">Applied machine learning</h3>
+<p style="margin: 0; color: #97A3B3; font-size: 16px">Gene expression classification, code-mixed emotion recognition in Bangla, fish quality inspection and network intrusion detection.</p>
+<a href="#publications" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; font-size: 15px; color: #2CD4C6">See the papers →</a>
+</div>
 
-    <!-- ===== PROJECTS ===== -->
-    <section id="projects" data-screen-label="05 Projects">
-      <div class="wrap">
-        <div class="reveal">
-          <div class="section-label"><span class="num">04 /</span><span>Projects</span></div>
-        </div>
-        <h2 class="reveal delay-1 section-title">Things I've built — in production.</h2>
-        <p class="reveal delay-2 section-sub">
-          A selected slice across apps, MIS, and web. Most live with WaterAid Bangladesh and partner organisations.
-        </p>
-        <div class="reveal delay-2 filter-bar" id="filter-bar">
-          <button class="active" data-filter="All">All</button>
-          <button data-filter="Web">Web</button>
-          <button data-filter="App">App</button>
-          <button data-filter="Health">Health</button>
-          <button data-filter="Event">Event</button>
-          <button data-filter="Impact">Impact</button>
-          <button data-filter="AI">AI</button>
-          <button data-filter="Data">Data</button>
-          <span class="count mono" id="filter-count">10 / 10</span>
-        </div>
-        <div class="proj-grid" id="proj-grid">
+<div style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; font-weight: 500; color: #2CD4C6">03</div>
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3">AI for health and social impact</h3>
+<p style="margin: 0; color: #97A3B3; font-size: 16px">The Ananya app gives women and girls menstrual health information, with an AI chatbot reviewed by medical teams.</p>
+<a href="#projects" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; font-size: 15px; color: #2CD4C6">See the project →</a>
+</div>
 
-          <a href="#" data-tags="Web,App" class="proj-card" onclick="event.preventDefault();">
-            <div class="head"><span class="id">PRJ_001</span><span class="ext mono">↗</span></div>
-            <h3>Customer-Centric Digital Platform for CWASA<span class="ongoing-badge">Ongoing</span></h3>
-            <div class="desc">End-to-end customer-centric digital platform for Chittagong Water Supply &amp; Sewerage Authority — service requests, billing, and citizen engagement.</div>
-            <div class="tags"><span class="tag">Web</span><span class="tag alt">App</span></div>
-          </a>
+<div style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; font-weight: 500; color: #2CD4C6">04</div>
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3">ICT for development</h3>
+<p style="margin: 0; color: #97A3B3; font-size: 16px">Digital platforms that communities, municipalities and water utilities in Bangladesh use every day.</p>
+<a href="#experience" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; font-size: 15px; color: #2CD4C6">See my roles →</a>
+</div>
 
-          <a href="https://www.wateraid.org/bd/" target="_blank" rel="noopener noreferrer" data-tags="Web" class="proj-card">
-            <div class="head"><span class="id">PRJ_002</span><span class="ext mono">↗</span></div>
-            <h3>WaterAid Bangladesh</h3>
-            <div class="desc">Country-level web presence supporting programme communication, donor reporting, and public engagement.</div>
-            <div class="tags"><span class="tag">Web</span></div>
-          </a>
+<div style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; font-weight: 500; color: #2CD4C6">05</div>
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3">Geospatial AI</h3>
+<p style="margin: 0; color: #97A3B3; font-size: 16px">An Enhanced U-Net for finding informal settlements in satellite imagery, checked against field data and shown on a live dashboard.</p>
+<a href="https://sluminsights.com" target="_blank" rel="noopener noreferrer" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; font-size: 15px; color: #2CD4C6">Open the dashboard ↗</a>
+</div>
 
-          <a href="https://play.google.com/store/apps/details?id=com.mhmapp.ananyaproject&hl=bn&pli=1" target="_blank" rel="noopener noreferrer" data-tags="App,Health" class="proj-card">
-            <div class="head"><span class="id">PRJ_003</span><span class="ext mono">↗</span></div>
-            <h3>Ananya — Menstrual Hygiene App</h3>
-            <div class="desc">Android app supporting menstrual hygiene awareness, tracking, and resources for adolescent girls in Bangladesh.</div>
-            <div class="tags"><span class="tag">App</span><span class="tag alt">Health</span></div>
-          </a>
+<div style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; font-weight: 500; color: #2CD4C6">06</div>
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3">Digital public services</h3>
+<p style="margin: 0; color: #97A3B3; font-size: 16px">A bilingual customer service app for Chattogram WASA covering billing, payments, complaints and service tracking.</p>
+<a href="#projects" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; font-size: 15px; color: #2CD4C6">See the project →</a>
+</div>
 
-          <a href="https://www.mhmplatform.org/" target="_blank" rel="noopener noreferrer" data-tags="Web,Health" class="proj-card">
-            <div class="head"><span class="id">PRJ_004</span><span class="ext mono">↗</span></div>
-            <h3>MHM Platform</h3>
-            <div class="desc">Knowledge and resource platform for Menstrual Hygiene Management — programme content, partner directory, and learning resources.</div>
-            <div class="tags"><span class="tag">Web</span><span class="tag alt">Health</span></div>
-          </a>
+<div style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; font-weight: 500; color: #2CD4C6">07</div>
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3">Human-computer interaction</h3>
+<p style="margin: 0; color: #97A3B3; font-size: 16px">User-centred design with program teams, bilingual interfaces and digital accessibility in public-facing apps.</p>
+<a href="#projects" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; font-size: 15px; color: #2CD4C6">See the projects →</a>
+</div>
 
-          <a href="https://www.toiletconference.org/" target="_blank" rel="noopener noreferrer" data-tags="Web,Event" class="proj-card">
-            <div class="head"><span class="id">PRJ_005</span><span class="ext mono">↗</span></div>
-            <h3>Toilet Conference 2025</h3>
-            <div class="desc">Digital platform for the Toilet Conference 2025 — registration, programme, and stakeholder coordination.</div>
-            <div class="tags"><span class="tag">Web</span><span class="tag alt">Event</span></div>
-          </a>
+<div style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; font-weight: 500; color: #2CD4C6">08</div>
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3">Monitoring and evaluation</h3>
+<p style="margin: 0; color: #97A3B3; font-size: 16px">Data collection workflows and dashboards that bring field, administrative and spatial data together for monitoring and planning.</p>
+<a href="#projects" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; font-size: 15px; color: #2CD4C6">See the projects →</a>
+</div>
 
-          <a href="https://ingoforumbd.net/" target="_blank" rel="noopener noreferrer" data-tags="Web" class="proj-card">
-            <div class="head"><span class="id">PRJ_006</span><span class="ext mono">↗</span></div>
-            <h3>INGO Forum Bangladesh</h3>
-            <div class="desc">Organisational web presence for the INGO Forum — sector coordination, member directory, and resource hub.</div>
-            <div class="tags"><span class="tag">Web</span></div>
-          </a>
+</div>
+</div>
+</section>
 
-          <a href="https://play.google.com/store/apps/details?id=com.wateraidbd.shomotashurokkha&hl=bn" target="_blank" rel="noopener noreferrer" data-tags="App,Impact" class="proj-card">
-            <div class="head"><span class="id">PRJ_007</span><span class="ext mono">↗</span></div>
-            <h3>Shomota Shurokkha — GBV Reporting</h3>
-            <div class="desc">Digital reporting mechanism for Gender-Based Violence response, deployed with WaterAid Bangladesh.</div>
-            <div class="tags"><span class="tag">App</span><span class="tag alt">Impact</span></div>
-          </a>
 
-          <a href="https://www.acmeai.tech/product/probahini-chatbot" target="_blank" rel="noopener noreferrer" data-tags="AI,App" class="proj-card">
-            <div class="head"><span class="id">PRJ_008</span><span class="ext mono">↗</span></div>
-            <h3>Probahini AI Chatbot</h3>
-            <div class="desc">Conversational AI assistant for citizen engagement and service navigation, built on the ACME AI platform.</div>
-            <div class="tags"><span class="tag">AI</span><span class="tag alt">App</span></div>
-          </a>
+<section id="publications" style="background: #07090C">
+<div style="max-width: 1240px; margin: 0 auto; padding: 88px clamp(20px, 4vw, 48px); box-sizing: border-box">
+<p style="margin: 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 14px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #2CD4C6">03 / Publications</p>
+<h2 style="margin: 10px 0 0; max-width: 760px; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: clamp(30px, 4vw, 44px); line-height: 1.15; letter-spacing: -0.02em">Papers and working papers</h2>
+<p style="margin: 18px 0 0; max-width: 700px; color: #97A3B3">One paper is published, two are accepted, two are under review and two are working papers.</p>
+<div style="margin-top: 32px; display: flex; flex-wrap: wrap; gap: 10px">
 
-          <a href="https://github.com/Swadesh1997" target="_blank" rel="noopener noreferrer" data-tags="App" class="proj-card">
-            <div class="head"><span class="id">PRJ_009</span><span class="ext mono">↗</span></div>
-            <h3>Hospital Appointment System</h3>
-            <div class="desc">Android application for outpatient appointment booking, queue management, and patient records.</div>
-            <div class="tags"><span class="tag">App</span></div>
-          </a>
+<button type="button" data-pubf="all" aria-pressed="false" style="min-height:44px; padding:0 18px; border-radius:2px; border:1px solid #2CD4C6; background:rgba(44,212,198,0.10); color:#2CD4C6; font-family:'JetBrains Mono', ui-monospace, monospace; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; cursor:pointer">All</button>
 
-          <a href="https://github.com/Swadesh1997" target="_blank" rel="noopener noreferrer" data-tags="Web,Data" class="proj-card">
-            <div class="head"><span class="id">PRJ_010</span><span class="ext mono">↗</span></div>
-            <h3>Football Club Management System</h3>
-            <div class="desc">Web + database management system for club operations, player registry, and match scheduling.</div>
-            <div class="tags"><span class="tag">Web</span><span class="tag alt">Data</span></div>
-          </a>
+<button type="button" data-pubf="published" aria-pressed="false" style="min-height:44px; padding:0 18px; border-radius:2px; border:1px solid rgba(255,255,255,0.14); background:transparent; color:#97A3B3; font-family:'JetBrains Mono', ui-monospace, monospace; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; cursor:pointer">Published</button>
 
-        </div>
-      </div>
-    </section>
+<button type="button" data-pubf="accepted" aria-pressed="false" style="min-height:44px; padding:0 18px; border-radius:2px; border:1px solid rgba(255,255,255,0.14); background:transparent; color:#97A3B3; font-family:'JetBrains Mono', ui-monospace, monospace; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; cursor:pointer">Accepted</button>
 
-    <!-- ===== PUBLICATIONS ===== -->
-    <section id="publications" data-screen-label="06 Publications">
-      <div class="wrap">
-        <div class="reveal">
-          <div class="section-label"><span class="num">05 /</span><span>Publications</span></div>
-        </div>
-        <h2 class="reveal delay-1 section-title">Research &amp; writing.</h2>
-        <div class="reveal delay-2 pub-list">
+<button type="button" data-pubf="review" aria-pressed="false" style="min-height:44px; padding:0 18px; border-radius:2px; border:1px solid rgba(255,255,255,0.14); background:transparent; color:#97A3B3; font-family:'JetBrains Mono', ui-monospace, monospace; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; cursor:pointer">Under review</button>
 
-          <div class="pub-item">
-            <div class="year mono">Ongoing</div>
-            <div>
-              <h4>Spatial Image-Based Urban Slum Detection Using High-Resolution Satellite Imagery and Deep Learning</h4>
-              <div class="venue">Research in progress</div>
-            </div>
-            <span class="link" style="opacity: 0.4;">Available on request</span>
-          </div>
+<button type="button" data-pubf="working" aria-pressed="false" style="min-height:44px; padding:0 18px; border-radius:2px; border:1px solid rgba(255,255,255,0.14); background:transparent; color:#97A3B3; font-family:'JetBrains Mono', ui-monospace, monospace; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; cursor:pointer">Working papers</button>
 
-          <div class="pub-item">
-            <div class="year mono">2021</div>
-            <div>
-              <h4>Gene Expression Data Classification and Pattern Analysis Using Data-Driven Approach</h4>
-              <div class="venue">IEEE ICMLC — Adelaide, Australia</div>
-            </div>
-            <a class="link" href="https://ieeexplore.ieee.org/document/9737248" target="_blank" rel="noopener noreferrer">Read ↗</a>
-          </div>
+</div>
+<div style="margin-top: 32px; display: flex; flex-direction: column; gap: 16px">
 
-          <div class="pub-item">
-            <div class="year mono">2021</div>
-            <div>
-              <h4>Sexual Harassment in Educational Institutions — A Public Survey in Bangladesh</h4>
-              <div class="venue">Independent Research Report</div>
-            </div>
-            <span class="link" style="opacity: 0.4;">Available on request</span>
-          </div>
+<article data-status="published" style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 28px clamp(20px, 3vw, 36px); display: flex; flex-wrap: wrap; gap: 14px 28px">
+<div style="flex: 0 0 56px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 15px; font-weight: 500; color: #2CD4C6">01</div>
+<div style="flex: 1 1 380px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px">
+<span style="display:inline-flex; align-items:center; min-height:30px; padding:0 12px; border-radius:999px; font-family:'JetBrains Mono', ui-monospace, monospace; font-size:12.5px; font-weight:500; background:rgba(44,212,198,0.14); color:#5EE0D4; border:1px solid rgba(44,212,198,0.14)">Published</span>
 
-        </div>
-      </div>
-    </section>
+</div>
+<h3 style="margin: 14px 0 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.35">Gene expression data classification and pattern analysis using a data-driven approach</h3>
 
-    <!-- ===== CERTIFICATIONS ===== -->
-    <section id="certifications" data-screen-label="07 Certifications">
-      <div class="wrap">
-        <div class="reveal">
-          <div class="section-label"><span class="num">06 /</span><span>Certifications</span></div>
-        </div>
-        <h2 class="reveal delay-1 section-title">Continued learning.</h2>
-        <div class="reveal delay-2 cert-grid">
-          <div class="cert-card"><div class="yr">CERT · 2025</div><h4>Digital Data Protection</h4><div class="issuer">WaterAid</div></div>
-          <div class="cert-card"><div class="yr">CERT · 2024</div><h4>Introduction to Generative AI</h4><div class="issuer">Google</div></div>
-          <div class="cert-card"><div class="yr">CERT · 2024</div><h4>Digital Marketing</h4><div class="issuer">HubSpot Academy</div></div>
-          <div class="cert-card"><div class="yr">CERT · 2024</div><h4>Google Analytics</h4><div class="issuer">Google Skillshop</div></div>
-          <div class="cert-card"><div class="yr">CERT · 2024</div><h4>Search Engine Optimization (SEO)</h4><div class="issuer">HubSpot Academy</div></div>
-          <div class="cert-card"><div class="yr">CERT · 2021</div><h4>Ethical Hacking &amp; Web Security</h4><div class="issuer">eShikhon</div></div>
-        </div>
-      </div>
-    </section>
+<p style="margin: 10px 0 0; color: #97A3B3; font-size: 15.5px">A. J. Ramisa, A. Hossain, S. M. I. Islam, P. M. Swadesh, M. T. Islam, M. A. Rahman, M. Z. Parvez</p>
 
-    <!-- ===== CONTACT ===== -->
-    <section id="contact" data-screen-label="09 Contact">
-      <div class="wrap">
-        <div class="reveal">
-          <div class="section-label"><span class="num">08 /</span><span>Contact</span></div>
-        </div>
-        <div class="contact-grid">
-          <div class="reveal delay-1">
-            <h2 class="contact-headline">
-              Have a project? <br />
-              Let's <span class="accent">build</span> it.
-            </h2>
-            <p style="color: var(--text-dim); margin-bottom: 40px; max-width: 40ch;">
-              I'm open to ICT consulting, digital development roles, and collaborations in the WASH and development sector.
-            </p>
-            <div class="contact-info">
-              <a href="mailto:swadeshmollah@gmail.com">
-                <div>
-                  <span class="k">Email</span>
-                  swadeshmollah@gmail.com
-                </div>
-                <span class="arrow mono">→</span>
-              </a>
-              <a href="tel:+8801703413930">
-                <div>
-                  <span class="k">Phone</span>
-                  +880 1703 413930
-                </div>
-                <span class="arrow mono">→</span>
-              </a>
-              <a href="https://www.linkedin.com/in/ponuel-mollah-swadesh-499424177/" target="_blank" rel="noopener noreferrer">
-                <div>
-                  <span class="k">LinkedIn</span>
-                  in/ponuel-mollah-swadesh
-                </div>
-                <span class="arrow mono">↗</span>
-              </a>
-              <a href="https://github.com/Swadesh1997" target="_blank" rel="noopener noreferrer">
-                <div>
-                  <span class="k">GitHub</span>
-                  github.com/Swadesh1997
-                </div>
-                <span class="arrow mono">↗</span>
-              </a>
-            </div>
-          </div>
-          <div class="reveal delay-2">
-            <form class="contact-form" id="contact-form" novalidate>
-              <div class="form-label">
-                <span>~/contact.sh</span>
-                <span class="lights"><span></span><span></span><span></span></span>
-              </div>
-              <div class="field">
-                <label for="cf-name">name</label>
-                <input id="cf-name" type="text" name="name" placeholder="Your name" />
-              </div>
-              <div class="field">
-                <label for="cf-email">email</label>
-                <input id="cf-email" type="email" name="email" placeholder="you@example.com" />
-              </div>
-              <div class="field">
-                <label for="cf-msg">message</label>
-                <textarea id="cf-msg" name="message" placeholder="What are you building?"></textarea>
-              </div>
-              <button type="submit" class="btn primary" style="width: 100%; justify-content: center;">
-                Send message <span class="arrow mono">→</span>
-              </button>
-              <div class="form-status" id="form-status"></div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+<p style="margin: 8px 0 0; color: #8794A5; font-size: 15.5px; font-style: italic">20th International Conference on Machine Learning and Cybernetics (ICMLC), Adelaide, Australia, 2021</p>
+<p style="margin: 12px 0 0; color: #97A3B3; font-size: 15.5px"><span style="font-weight: 600; color: #E6EDF3">Area: </span>Applied machine learning for high-dimensional gene-expression data, including feature selection, classification and pattern analysis.</p>
 
-  </main>
+<a href="https://ieeexplore.ieee.org/document/9737248" target="_blank" rel="noopener noreferrer" style="margin-top: 8px; display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; font-size: 15px; color: #2CD4C6; text-decoration: underline; text-underline-offset: 4px">View on IEEE Xplore ↗</a>
 
-  <!-- ===== Footer ===== -->
-  <footer class="footer">
-    <div class="footer-grid">
-      <div>
-        © 2026 Ponuel Mollah Swadesh. <span class="built">Built in Dhaka · last commit 2026.04</span>
-      </div>
-      <div class="links">
-        <a href="https://www.linkedin.com/in/ponuel-mollah-swadesh-499424177/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/Swadesh1997" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="mailto:swadeshmollah@gmail.com">Email</a>
-      </div>
-    </div>
-  </footer>
+</div>
+</article>
 
-  <script>
-    // ===== Reveal-on-scroll =====
-    (function () {
-      const els = document.querySelectorAll('.reveal');
-      const io = new IntersectionObserver((entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            e.target.classList.add('in');
-            io.unobserve(e.target);
-          }
-        });
-      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-      els.forEach((el) => io.observe(el));
-    })();
+<article data-status="accepted" style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 28px clamp(20px, 3vw, 36px); display: flex; flex-wrap: wrap; gap: 14px 28px">
+<div style="flex: 0 0 56px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 15px; font-weight: 500; color: #2CD4C6">02</div>
+<div style="flex: 1 1 380px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px">
+<span style="display:inline-flex; align-items:center; min-height:30px; padding:0 12px; border-radius:999px; font-family:'JetBrains Mono', ui-monospace, monospace; font-size:12.5px; font-weight:500; background:rgba(167,139,250,0.16); color:#C4B5FD; border:1px solid rgba(167,139,250,0.16)">Accepted</span>
 
-    // ===== Skill bars: trigger fill on intersection =====
-    (function () {
-      const bars = document.querySelectorAll('.skill-bar');
-      const io = new IntersectionObserver((entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            e.target.classList.add('in');
-            io.unobserve(e.target);
-          }
-        });
-      }, { threshold: 0.3 });
-      bars.forEach((b) => io.observe(b));
-    })();
+</div>
+<h3 style="margin: 14px 0 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.35">Beyond Single Transformers: A BanglaBERT-XLM-RoBERTa Stacking Framework for Code-Mixed Emotion Recognition</h3>
 
-    // ===== Smooth-scroll for anchor links (topbar + dot nav + CTAs) =====
-    (function () {
-      document.querySelectorAll('a[href^="#"]').forEach((a) => {
-        a.addEventListener('click', (e) => {
-          const id = a.getAttribute('href').slice(1);
-          if (!id) return;
-          const target = document.getElementById(id);
-          if (!target) return;
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
-      });
-      document.querySelectorAll('.dot-nav button').forEach((btn) => {
-        btn.addEventListener('click', () => {
-          const id = btn.dataset.target;
-          document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
-      });
-    })();
+<p style="margin: 10px 0 0; color: #97A3B3; font-size: 15.5px">M. H. Islam, N. A. S. Jiku, S. Mandal, P. M. Swadesh, A. Ghosh</p>
 
-    // ===== Dot-nav active state =====
-    (function () {
-      const buttons = Array.from(document.querySelectorAll('.dot-nav button'));
-      const ids = buttons.map((b) => b.dataset.target);
-      const update = () => {
-        const y = window.scrollY + window.innerHeight * 0.4;
-        let cur = ids[0];
-        for (const id of ids) {
-          const el = document.getElementById(id);
-          if (el && el.offsetTop <= y) cur = id;
-        }
-        buttons.forEach((b) => b.classList.toggle('active', b.dataset.target === cur));
-      };
-      update();
-      window.addEventListener('scroll', update, { passive: true });
-      window.addEventListener('resize', update);
-    })();
+<p style="margin: 8px 0 0; color: #8794A5; font-size: 15.5px; font-style: italic">2026 3rd IEEE International Conference on Computing, Applications and Systems (COMPAS)</p>
+<p style="margin: 12px 0 0; color: #97A3B3; font-size: 15.5px"><span style="font-weight: 600; color: #E6EDF3">Area: </span>Natural language processing and artificial intelligence.</p>
 
-    // ===== Project filter =====
-    (function () {
-      const bar = document.getElementById('filter-bar');
-      const grid = document.getElementById('proj-grid');
-      const count = document.getElementById('filter-count');
-      if (!bar || !grid || !count) return;
-      const cards = Array.from(grid.querySelectorAll('.proj-card'));
-      const total = cards.length;
-      const pad = (n) => String(n).padStart(2, '0');
-      bar.addEventListener('click', (e) => {
-        const btn = e.target.closest('button[data-filter]');
-        if (!btn) return;
-        bar.querySelectorAll('button').forEach((b) => b.classList.toggle('active', b === btn));
-        const filter = btn.dataset.filter;
-        let visible = 0;
-        cards.forEach((card) => {
-          const tags = (card.dataset.tags || '').split(',');
-          const show = filter === 'All' || tags.includes(filter);
-          card.classList.toggle('hidden', !show);
-          if (show) visible++;
-        });
-        count.textContent = `${pad(visible)} / ${pad(total)}`;
-      });
-    })();
+</div>
+</article>
 
-    // ===== Contact form (demo) =====
-    (function () {
-      const form = document.getElementById('contact-form');
-      const status = document.getElementById('form-status');
-      if (!form || !status) return;
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const name = form.name.value.trim();
-        const email = form.email.value.trim();
-        const message = form.message.value.trim();
-        if (!name || !email || !message) {
-          status.textContent = '// error: all fields required';
-          return;
-        }
-        if (!/.+@.+\..+/.test(email)) {
-          status.textContent = '// error: invalid email format';
-          return;
-        }
-        status.textContent = '// queued: 3... 2... 1... ✓ message sent (demo)';
-        form.reset();
-      });
-    })();
-  </script>
+<article data-status="accepted" style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 28px clamp(20px, 3vw, 36px); display: flex; flex-wrap: wrap; gap: 14px 28px">
+<div style="flex: 0 0 56px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 15px; font-weight: 500; color: #2CD4C6">03</div>
+<div style="flex: 1 1 380px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px">
+<span style="display:inline-flex; align-items:center; min-height:30px; padding:0 12px; border-radius:999px; font-family:'JetBrains Mono', ui-monospace, monospace; font-size:12.5px; font-weight:500; background:rgba(167,139,250,0.16); color:#C4B5FD; border:1px solid rgba(167,139,250,0.16)">Accepted</span>
+
+</div>
+<h3 style="margin: 14px 0 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.35">Automated Visual Inspection of Tilapia Fish Quality Using CNN and Transfer Learning</h3>
+
+<p style="margin: 10px 0 0; color: #97A3B3; font-size: 15.5px">M. H. Islam, N. A. S. Jiku, S. Mandal, P. M. Swadesh, A. Ghosh</p>
+
+<p style="margin: 8px 0 0; color: #8794A5; font-size: 15.5px; font-style: italic">IEEE International Conference on Optics, Machine Learning and Emerging Technology (OMLET 2026)</p>
+<p style="margin: 12px 0 0; color: #97A3B3; font-size: 15.5px"><span style="font-weight: 600; color: #E6EDF3">Area: </span>Artificial intelligence and computer vision.</p>
+
+</div>
+</article>
+
+<article data-status="review" style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 28px clamp(20px, 3vw, 36px); display: flex; flex-wrap: wrap; gap: 14px 28px">
+<div style="flex: 0 0 56px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 15px; font-weight: 500; color: #2CD4C6">04</div>
+<div style="flex: 1 1 380px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px">
+<span style="display:inline-flex; align-items:center; min-height:30px; padding:0 12px; border-radius:999px; font-family:'JetBrains Mono', ui-monospace, monospace; font-size:12.5px; font-weight:500; background:#11161D; color:#97A3B3; border:1px dashed #6B7787">Under review</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 30px; padding: 0 12px; border-radius: 3px; background: rgba(44,212,198,0.14); color: #2CD4C6; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; font-weight: 500">First author</span>
+
+</div>
+<h3 style="margin: 14px 0 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.35">An Explainable Hybrid Stacking Ensemble for One-Hour-Ahead Soil Moisture Forecasting Toward Cost-Aware Irrigation Decision Support</h3>
+
+<p style="margin: 10px 0 0; color: #97A3B3; font-size: 15.5px">P. M. Swadesh, A. Ghosh, K. Asif, S. Mandal, A. Dutta, S. A. Sworna</p>
+
+<p style="margin: 8px 0 0; color: #8794A5; font-size: 15.5px; font-style: italic">14th International Conference on Electrical and Computer Engineering (ICECE 2026)</p>
+<p style="margin: 12px 0 0; color: #97A3B3; font-size: 15.5px"><span style="font-weight: 600; color: #E6EDF3">Area: </span>Explainable AI, machine learning, time-series forecasting and irrigation decision support.</p>
+
+</div>
+</article>
+
+<article data-status="review" style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 28px clamp(20px, 3vw, 36px); display: flex; flex-wrap: wrap; gap: 14px 28px">
+<div style="flex: 0 0 56px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 15px; font-weight: 500; color: #2CD4C6">05</div>
+<div style="flex: 1 1 380px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px">
+<span style="display:inline-flex; align-items:center; min-height:30px; padding:0 12px; border-radius:999px; font-family:'JetBrains Mono', ui-monospace, monospace; font-size:12.5px; font-weight:500; background:#11161D; color:#97A3B3; border:1px dashed #6B7787">Under review</span>
+
+</div>
+<h3 style="margin: 14px 0 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.35">Explainable Hybrid CNN-BiLSTM-Transformer Network Intrusion Detection with Unknown-Attack Rejection</h3>
+
+<p style="margin: 10px 0 0; color: #97A3B3; font-size: 15.5px">D. Mondol, A. Ghosh, S. Mandal, J. Alam, P. Tanjin, A. Dutta, K. Asif, P. M. Swadesh, R. Baidya</p>
+
+<p style="margin: 8px 0 0; color: #8794A5; font-size: 15.5px; font-style: italic">12th IEEE International Women in Engineering (WIE) Conference on Electrical and Computer Engineering 2026</p>
+<p style="margin: 12px 0 0; color: #97A3B3; font-size: 15.5px"><span style="font-weight: 600; color: #E6EDF3">Area: </span>Security and information assurance.</p>
+
+</div>
+</article>
+
+<article data-status="working" style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 28px clamp(20px, 3vw, 36px); display: flex; flex-wrap: wrap; gap: 14px 28px">
+<div style="flex: 0 0 56px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 15px; font-weight: 500; color: #2CD4C6">06</div>
+<div style="flex: 1 1 380px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px">
+<span style="display:inline-flex; align-items:center; min-height:30px; padding:0 12px; border-radius:999px; font-family:'JetBrains Mono', ui-monospace, monospace; font-size:12.5px; font-weight:500; background:transparent; color:#97A3B3; border:1px solid rgba(255,255,255,0.28)">Working paper</span>
+
+</div>
+<h3 style="margin: 14px 0 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.35">Enhanced U-Net for Informal Settlement Detection in High-Resolution Satellite Imagery: Model Performance, Field Validation, and the Limits of Roofing-Material Proxies</h3>
+
+<p style="margin: 8px 0 0; color: #8794A5; font-size: 15.5px; font-style: italic">Working paper, WaterAid Bangladesh</p>
+<p style="margin: 12px 0 0; color: #97A3B3; font-size: 15.5px"><span style="font-weight: 600; color: #E6EDF3">Area: </span>Deep learning on very high-resolution satellite imagery, field-based validation and a geospatial dashboard for detecting urban informal settlements.</p>
+
+<a href="https://sluminsights.com" target="_blank" rel="noopener noreferrer" style="margin-top: 8px; display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; font-size: 15px; color: #2CD4C6; text-decoration: underline; text-underline-offset: 4px">Open the dashboard ↗</a>
+
+</div>
+</article>
+
+<article data-status="working" style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 28px clamp(20px, 3vw, 36px); display: flex; flex-wrap: wrap; gap: 14px 28px">
+<div style="flex: 0 0 56px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 15px; font-weight: 500; color: #2CD4C6">07</div>
+<div style="flex: 1 1 380px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px">
+<span style="display:inline-flex; align-items:center; min-height:30px; padding:0 12px; border-radius:999px; font-family:'JetBrains Mono', ui-monospace, monospace; font-size:12.5px; font-weight:500; background:transparent; color:#97A3B3; border:1px solid rgba(255,255,255,0.28)">Working paper</span>
+
+</div>
+<h3 style="margin: 14px 0 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.35">Chameleon Words in Cross-Domain Sentiment Analysis: An Explainable Framework with LLM-Based Style Transfer</h3>
+
+<p style="margin: 8px 0 0; color: #8794A5; font-size: 15.5px; font-style: italic">Working paper</p>
+<p style="margin: 12px 0 0; color: #97A3B3; font-size: 15.5px"><span style="font-weight: 600; color: #E6EDF3">Area: </span>Natural language processing and artificial intelligence.</p>
+
+</div>
+</article>
+
+</div>
+</div>
+</section>
+
+
+
+
+
+<section id="projects" style="background: #0B0F14">
+<div style="max-width: 1240px; margin: 0 auto; padding: 88px clamp(20px, 4vw, 48px); box-sizing: border-box">
+<p style="margin: 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 14px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #2CD4C6">04 / Projects</p>
+<h2 style="margin: 10px 0 0; max-width: 760px; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: clamp(30px, 4vw, 44px); line-height: 1.15; letter-spacing: -0.02em">Systems I have built and managed</h2>
+<div style="margin-top: 32px; display: flex; flex-wrap: wrap; gap: 10px">
+
+<button type="button" data-projf="all" aria-pressed="false" style="min-height:44px; padding:0 18px; border-radius:2px; border:1px solid #2CD4C6; background:rgba(44,212,198,0.10); color:#2CD4C6; font-family:'JetBrains Mono', ui-monospace, monospace; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; cursor:pointer">All</button>
+
+<button type="button" data-projf="geo" aria-pressed="false" style="min-height:44px; padding:0 18px; border-radius:2px; border:1px solid rgba(255,255,255,0.14); background:transparent; color:#97A3B3; font-family:'JetBrains Mono', ui-monospace, monospace; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; cursor:pointer">Geospatial</button>
+
+<button type="button" data-projf="public" aria-pressed="false" style="min-height:44px; padding:0 18px; border-radius:2px; border:1px solid rgba(255,255,255,0.14); background:transparent; color:#97A3B3; font-family:'JetBrains Mono', ui-monospace, monospace; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; cursor:pointer">Public services</button>
+
+<button type="button" data-projf="platforms" aria-pressed="false" style="min-height:44px; padding:0 18px; border-radius:2px; border:1px solid rgba(255,255,255,0.14); background:transparent; color:#97A3B3; font-family:'JetBrains Mono', ui-monospace, monospace; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; cursor:pointer">Platforms and events</button>
+
+</div>
+<div style="margin-top: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 22px">
+
+<article data-theme="health" style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 30px; display: flex; flex-direction: column; gap: 14px">
+<span style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 30px; padding: 0 12px; border-radius: 3px; background: rgba(44,212,198,0.14); color: #5EE0D4; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; font-weight: 500">PRJ_001 | Digital health</span>
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 21px; line-height: 1.3">Ananya menstrual health app</h3>
+<p style="margin: 0; color: #97A3B3; font-size: 16px">A Flutter mobile app, backed by a Django API, that gives women and girls in underserved communities menstrual health information. It has period tracking, hospital and helpline details and an AI chatbot built with program teams and medical reviewers. I built version 1.0 and now manage its development. More than 45,000 users have registered.</p>
+<p style="margin: 0; margin-top: auto; padding-top: 6px; color: #8794A5; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px">Flutter, Django, Google Play | WaterAid Bangladesh, 2023 to present</p>
+
+<a href="https://play.google.com/store/apps/details?id=com.mhmapp.ananyaproject" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; font-size: 15px; color: #2CD4C6; text-decoration: underline; text-underline-offset: 4px">View on Google Play ↗</a>
+
+</article>
+
+<article data-theme="public" style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 30px; display: flex; flex-direction: column; gap: 14px">
+<span style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 30px; padding: 0 12px; border-radius: 3px; background: rgba(44,212,198,0.14); color: #5EE0D4; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; font-weight: 500">PRJ_002 | Public services</span>
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 21px; line-height: 1.3">Chattogram WASA customer service platform</h3>
+<p style="margin: 0; color: #97A3B3; font-size: 16px">A bilingual platform for billing, online payments, new connection applications, complaints, notifications and service tracking. The rollout covers a mobile app, a web portal, USSD and IVR. I turn utility workflows into digital requirements and work with the developer team so managers can see where requests get stuck.</p>
+<p style="margin: 0; margin-top: auto; padding-top: 6px; color: #8794A5; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px">Chattogram WASA with WaterAid Bangladesh</p>
+
+</article>
+
+<article data-theme="public" style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 30px; display: flex; flex-direction: column; gap: 14px">
+<span style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 30px; padding: 0 12px; border-radius: 3px; background: rgba(44,212,198,0.14); color: #5EE0D4; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; font-weight: 500">PRJ_003 | Public services</span>
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 21px; line-height: 1.3">Area-based water tariff platform</h3>
+<p style="margin: 0; color: #97A3B3; font-size: 16px">A web platform for area-based water tariffs. I designed the role-based access (viewer, editor and admin) that decides who can see, change or manage the data.</p>
+<p style="margin: 0; margin-top: auto; padding-top: 6px; color: #8794A5; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px">WaterAid Bangladesh</p>
+
+</article>
+
+<article data-theme="geo" style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 30px; display: flex; flex-direction: column; gap: 14px">
+<span style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 30px; padding: 0 12px; border-radius: 3px; background: rgba(44,212,198,0.14); color: #5EE0D4; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; font-weight: 500">PRJ_004 | Geospatial</span>
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 21px; line-height: 1.3">Municipal sanitation and WASH information systems</h3>
+<p style="margin: 0; color: #97A3B3; font-size: 16px">GIS-enabled workflows that bring spatial and administrative data together for sanitation planning. They include the Integrated Municipal Information System for Lalmonirhat Municipality and digital data collection for public toilets, water quality and service coverage.</p>
+<p style="margin: 0; margin-top: auto; padding-top: 6px; color: #8794A5; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px">Lalmonirhat and other municipalities</p>
+
+</article>
+
+<article data-theme="geo" style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 30px; display: flex; flex-direction: column; gap: 14px">
+<span style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 30px; padding: 0 12px; border-radius: 3px; background: rgba(44,212,198,0.14); color: #5EE0D4; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; font-weight: 500">PRJ_005 | Geospatial</span>
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 21px; line-height: 1.3">GIS drone survey and WASH assessment</h3>
+<p style="margin: 0; color: #97A3B3; font-size: 16px">I planned and coordinated a drone survey and WASH situation assessment in Lalmonirhat and Paikgacha with SNV. A specialist mapping vendor did the flying and processing, and I managed scope, timelines and the final report, delivered in May 2026.</p>
+<p style="margin: 0; margin-top: auto; padding-top: 6px; color: #8794A5; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px">WaterAid Bangladesh with SNV, 2026</p>
+
+</article>
+
+<article data-theme="geo" style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 30px; display: flex; flex-direction: column; gap: 14px">
+<span style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 30px; padding: 0 12px; border-radius: 3px; background: rgba(44,212,198,0.14); color: #5EE0D4; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; font-weight: 500">PRJ_006 | Geospatial</span>
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 21px; line-height: 1.3">Informal settlement detection from satellite imagery</h3>
+<p style="margin: 0; color: #97A3B3; font-size: 16px">I planned and led this project across the Dhaka North, Dhaka South and Narayanganj city corporations. An Enhanced U-Net model read 30 cm satellite imagery, and I designed a field check of 387 sites across 129 wards. The result shows the limits of using roofing material as a proxy for informal settlements. It is a working paper with WaterAid Bangladesh.</p>
+<p style="margin: 0; margin-top: auto; padding-top: 6px; color: #8794A5; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px">WaterAid Bangladesh, 2025, working paper</p>
+
+<a href="https://sluminsights.com" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; font-size: 15px; color: #2CD4C6; text-decoration: underline; text-underline-offset: 4px">Open the dashboard ↗</a>
+
+</article>
+
+<article data-theme="platforms" style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 30px; display: flex; flex-direction: column; gap: 14px">
+<span style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 30px; padding: 0 12px; border-radius: 3px; background: rgba(44,212,198,0.14); color: #5EE0D4; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; font-weight: 500">PRJ_007 | Platforms and events</span>
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 21px; line-height: 1.3">Toilet Conference 2025 digital systems</h3>
+<p style="margin: 0; color: #97A3B3; font-size: 16px">The website, registration portal, mobile app, digital payments and QR-based ticketing and check-in for an international sanitation conference with 500+ delegates from 28 nationalities. Check-in ran without queues, and an admin dashboard with role-based access gave organisers control of attendee data.</p>
+<p style="margin: 0; margin-top: auto; padding-top: 6px; color: #8794A5; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px">WaterAid Bangladesh, 2025</p>
+
+<a href="https://www.tbsnews.net/economy/corporates/toilet-conference-2025-commences-emphasis-global-sanitation-solutions-1078166" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; font-size: 15px; color: #2CD4C6; text-decoration: underline; text-underline-offset: 4px">Press coverage of the event ↗</a>
+
+</article>
+
+<article data-theme="platforms" style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 30px; display: flex; flex-direction: column; gap: 14px">
+<span style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 30px; padding: 0 12px; border-radius: 3px; background: rgba(44,212,198,0.14); color: #5EE0D4; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; font-weight: 500">PRJ_008 | Platforms and events</span>
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 21px; line-height: 1.3">Web and workflow platforms</h3>
+<p style="margin: 0; color: #97A3B3; font-size: 16px">The Drupal-based WaterAid Bangladesh website, the MHM Platform website, the INGO Forum Bangladesh website and the Vendor Enlistment Platform. The work covers content workflows, process automation and database-driven design.</p>
+<p style="margin: 0; margin-top: auto; padding-top: 6px; color: #8794A5; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px">WaterAid Bangladesh, 2023 to 2025</p>
+
+</article>
+
+</div>
+</div>
+</section><section id="education" style="background: #07090C">
+<div style="max-width: 1240px; margin: 0 auto; padding: 88px clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 56px">
+
+<div style="flex: 1 1 420px; min-width: 0">
+<p style="margin: 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 14px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #2CD4C6">05 / Education</p>
+<h2 style="margin: 10px 0 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: clamp(28px, 3.4vw, 38px); line-height: 1.15; letter-spacing: -0.02em">Study record</h2>
+<div style="margin-top: 32px; display: flex; flex-direction: column; gap: 16px">
+<div style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 24px 28px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; color: #8794A5">2021</div>
+<h3 style="margin: 4px 0 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 19px; line-height: 1.3">BSc in Computer Science and Engineering</h3>
+<p style="margin: 4px 0 0; color: #97A3B3; font-size: 16px"><a href="https://www.bracu.ac.bd" target="_blank" rel="noopener noreferrer" style="font-weight: 500; text-decoration: underline; text-underline-offset: 3px">BRAC University</a>, Dhaka. CGPA 3.71 / 4.00, High Distinction.</p>
+</div>
+<div style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 24px 28px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; color: #8794A5">2016</div>
+<h3 style="margin: 4px 0 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 19px; line-height: 1.3">Higher Secondary Certificate, Science</h3>
+<p style="margin: 4px 0 0; color: #97A3B3; font-size: 16px">Bangabandhu Govt. College, Khulna. GPA 5.00 / 5.00.</p>
+</div>
+<div style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 24px 28px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; color: #8794A5">2014</div>
+<h3 style="margin: 4px 0 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 19px; line-height: 1.3">Secondary School Certificate, Science</h3>
+<p style="margin: 4px 0 0; color: #97A3B3; font-size: 16px">St. Joseph's High School, Khulna. GPA 5.00 / 5.00.</p>
+</div>
+</div>
+<h3 style="margin: 36px 0 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 19px">Honours</h3>
+<ul style="margin: 12px 0 0; padding-left: 20px; color: #97A3B3; display: flex; flex-direction: column; gap: 8px; font-size: 16px">
+<li>Merit-based scholarship, BRAC University, 2017 to 2021.</li>
+<li>Five-time Dean's List: Spring 2017, Summer 2019, Spring 2020, Fall 2020 and Spring 2021.</li>
+<li>Board scholarship, Higher Secondary Certificate, 2017 to 2020.</li>
+</ul>
+</div>
+
+<div style="flex: 1 1 420px; min-width: 0">
+<p style="margin: 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 14px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #2CD4C6">// Skills</p>
+<h2 style="margin: 10px 0 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: clamp(28px, 3.4vw, 38px); line-height: 1.15; letter-spacing: -0.02em">Tools I work with</h2>
+<div style="margin-top: 32px; display: flex; flex-direction: column; gap: 22px">
+
+<div>
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: #8794A5">Programming languages</div>
+<div style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px">
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">Java</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">Kotlin</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">Python</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">JavaScript</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">Dart</span>
+
+</div>
+</div>
+
+<div>
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: #8794A5">Machine learning and data science</div>
+<div style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px">
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">PyTorch</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">scikit-learn</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">CatBoost</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">NumPy</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">pandas</span>
+
+</div>
+</div>
+
+<div>
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: #8794A5">Geospatial computing</div>
+<div style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px">
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">GeoPandas</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">QGIS</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">rasterio</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">GDAL</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">Leaflet</span>
+
+</div>
+</div>
+
+<div>
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: #8794A5">Databases</div>
+<div style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px">
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">MySQL</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">PostgreSQL</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">PostGIS</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">MongoDB</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">Firebase</span>
+
+</div>
+</div>
+
+<div>
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: #8794A5">Mobile and web development</div>
+<div style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px">
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">Android Studio</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">Flutter</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">PHP</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">Next.js</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">Webflow</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">WordPress</span>
+
+</div>
+</div>
+
+<div>
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: #8794A5">Tools and workflows</div>
+<div style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px">
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">Git and GitHub</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">Microsoft 365</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">Power BI</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">Power Automate</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">Jira</span>
+
+<span style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 3px; background: #11161D; border: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 500">Canva</span>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+</section>
+
+
+<section id="certifications" style="background: #0B0F14">
+<div style="max-width: 1240px; margin: 0 auto; padding: 88px clamp(20px, 4vw, 48px); box-sizing: border-box">
+<p style="margin: 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 14px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #2CD4C6">06 / Certifications</p>
+<h2 style="margin: 10px 0 0; max-width: 760px; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: clamp(30px, 4vw, 44px); line-height: 1.15; letter-spacing: -0.02em">Short courses I have completed</h2>
+<p style="margin: 18px 0 0; max-width: 680px; color: #97A3B3">Each card opens the certificate. They cover AI, data protection, programming, security and digital communication.</p>
+<div style="margin-top: 44px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 22px">
+<div style="background: #11161D; border: 1px solid rgba(255,255,255,0.14); border-radius: 6px; padding: 26px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: #2CD4C6">Anthropic | 2026</div>
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 19px; line-height: 1.3">AI Fluency: Framework and Foundations</h3>
+<a href="assets/certificates/anthropic-ai-fluency-foundations.pdf" target="_blank" rel="noopener" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; font-size: 15px; color: #2CD4C6">View certificate ↗</a>
+</div>
+<div style="background: #11161D; border: 1px solid rgba(255,255,255,0.14); border-radius: 6px; padding: 26px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: #2CD4C6">Anthropic and Giving Tuesday | 2026</div>
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 19px; line-height: 1.3">AI Fluency for Nonprofits</h3>
+<a href="assets/certificates/anthropic-ai-fluency-nonprofits.pdf" target="_blank" rel="noopener" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; font-size: 15px; color: #2CD4C6">View certificate ↗</a>
+</div>
+<div style="background: #11161D; border: 1px solid rgba(255,255,255,0.14); border-radius: 6px; padding: 26px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: #2CD4C6">WaterAid | May 2025</div>
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 19px; line-height: 1.3">Cyber Security in the Workplace</h3>
+<a href="assets/certificates/wateraid-cyber-security.pdf" target="_blank" rel="noopener" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; font-size: 15px; color: #2CD4C6">View certificate ↗</a>
+</div>
+<div style="background: #11161D; border: 1px solid rgba(255,255,255,0.14); border-radius: 6px; padding: 26px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: #2CD4C6">University of Michigan on Coursera | Jul 2021</div>
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 19px; line-height: 1.3">Programming for Everybody (Getting Started with Python)</h3>
+<a href="assets/certificates/coursera-python.pdf" target="_blank" rel="noopener" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; font-size: 15px; color: #2CD4C6">View certificate ↗</a>
+</div>
+<div style="background: #11161D; border: 1px solid rgba(255,255,255,0.14); border-radius: 6px; padding: 26px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: #2CD4C6">eShikhon | Nov 2021</div>
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 19px; line-height: 1.3">Ethical Hacking Certification</h3>
+<a href="assets/certificates/eshikhon-ethical-hacking.pdf" target="_blank" rel="noopener" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; font-size: 15px; color: #2CD4C6">View certificate ↗</a>
+</div>
+<div style="background: #11161D; border: 1px solid rgba(255,255,255,0.14); border-radius: 6px; padding: 26px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: #2CD4C6">HubSpot Academy | 2024</div>
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 19px; line-height: 1.3">Digital Marketing Certified</h3>
+<a href="assets/certificates/hubspot-digital-marketing.png" target="_blank" rel="noopener" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; font-size: 15px; color: #2CD4C6">View certificate ↗</a>
+</div>
+<div style="background: #11161D; border: 1px solid rgba(255,255,255,0.14); border-radius: 6px; padding: 26px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: #2CD4C6">HubSpot Academy | 2024</div>
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 19px; line-height: 1.3">Inbound Marketing Certified</h3>
+<a href="assets/certificates/hubspot-inbound-marketing.png" target="_blank" rel="noopener" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; font-size: 15px; color: #2CD4C6">View certificate ↗</a>
+</div>
+<div style="background: #11161D; border: 1px solid rgba(255,255,255,0.14); border-radius: 6px; padding: 26px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: #2CD4C6">HubSpot Academy | 2024</div>
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 19px; line-height: 1.3">SEO Certified</h3>
+<a href="assets/certificates/hubspot-seo.png" target="_blank" rel="noopener" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; font-size: 15px; color: #2CD4C6">View certificate ↗</a>
+</div>
+</div>
+<p style="margin: 28px 0 0; color: #8794A5; font-size: 15px">Also completed: Introduction to Generative AI (Google, 2024) and Google Analytics (Skillshop, 2024).</p>
+</div>
+</section>
+
+
+<section id="experience" style="background: #07090C">
+<div style="max-width: 1240px; margin: 0 auto; padding: 88px clamp(20px, 4vw, 48px); box-sizing: border-box">
+<p style="margin: 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 14px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #2CD4C6">07 / Experience</p>
+<h2 style="margin: 10px 0 0; max-width: 760px; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: clamp(30px, 4vw, 44px); line-height: 1.15; letter-spacing: -0.02em">Where I have worked</h2>
+
+<div style="margin-top: 48px; display: flex; flex-direction: column">
+
+<div style="display: flex; flex-wrap: wrap; gap: 14px 40px; padding: 32px 0; border-top: 1px solid rgba(255,255,255,0.14)">
+<div style="flex: 0 0 210px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 14px; color: #8794A5">Oct 2025 to present</div>
+<div style="flex: 1 1 400px; min-width: 0">
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 22px; line-height: 1.3">ICT and Digital Development Officer</h3>
+<p style="margin: 4px 0 0; font-weight: 500; color: #2CD4C6">WaterAid Bangladesh</p>
+<ul style="margin: 16px 0 0; padding-left: 20px; color: #97A3B3; display: flex; flex-direction: column; gap: 8px">
+<li>Lead the digital systems, mobile apps, dashboards and data workflows used by communities, municipalities and water utilities.</li>
+<li>Turn service delivery problems into system requirements, and support the digitisation of Chattogram WASA customer service.</li>
+<li>Design GIS-enabled municipal workflows that bring spatial and administrative data together for sanitation planning.</li>
+<li>Supervise vendors, external developers and ICT staff on quality, timelines and documentation.</li>
+</ul>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 14px 40px; padding: 32px 0; border-top: 1px solid rgba(255,255,255,0.14)">
+<div style="flex: 0 0 210px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 14px; color: #8794A5">Jan 2024 to Sep 2025</div>
+<div style="flex: 1 1 400px; min-width: 0">
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 22px; line-height: 1.3">Associate Officer, ICT and Digital Development</h3>
+<p style="margin: 4px 0 0; font-weight: 500; color: #2CD4C6">WaterAid Bangladesh</p>
+<ul style="margin: 16px 0 0; padding-left: 20px; color: #97A3B3; display: flex; flex-direction: column; gap: 8px">
+<li>Managed digital platforms for menstrual health, gender-based violence, public sanitation, customer services and water management.</li>
+<li>Led the development and ongoing management of the INGO Forum Bangladesh website.</li>
+<li>Coordinated the Integrated Municipal Information System (IMIS) for Lalmonirhat Municipality.</li>
+</ul>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 14px 40px; padding: 32px 0; border-top: 1px solid rgba(255,255,255,0.14)">
+<div style="flex: 0 0 210px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 14px; color: #8794A5">Jan 2023 to Dec 2023</div>
+<div style="flex: 1 1 400px; min-width: 0">
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 22px; line-height: 1.3">Young Professional, ICT and Digital Development</h3>
+<p style="margin: 4px 0 0; font-weight: 500; color: #2CD4C6">WaterAid Bangladesh</p>
+<ul style="margin: 16px 0 0; padding-left: 20px; color: #97A3B3; display: flex; flex-direction: column; gap: 8px">
+<li>Built and maintained Ananya app v1.0, a mobile app for sharing menstrual hygiene knowledge with women and girls in underserved communities.</li>
+<li>Administered the Drupal-based WaterAid Bangladesh website and the MHM Platform website.</li>
+<li>Developed the Vendor Enlistment Platform, with process automation and a database-driven design.</li>
+</ul>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 14px 40px; padding: 32px 0; border-top: 1px solid rgba(255,255,255,0.14)">
+<div style="flex: 0 0 210px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 14px; color: #8794A5">Jan 2022 to Dec 2022</div>
+<div style="flex: 1 1 400px; min-width: 0">
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 22px; line-height: 1.3">Junior IT Executive</h3>
+<p style="margin: 4px 0 0; font-weight: 500; color: #2CD4C6">FrogBID, Khulna</p>
+<ul style="margin: 16px 0 0; padding-left: 20px; color: #97A3B3; display: flex; flex-direction: column; gap: 8px">
+<li>System setup and maintenance, data and asset management, end-user support and vendor coordination.</li>
+</ul>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 14px 40px; padding: 32px 0; border-top: 1px solid rgba(255,255,255,0.14); border-bottom: 1px solid rgba(255,255,255,0.14)">
+<div style="flex: 0 0 210px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 14px; color: #8794A5">Jan 2019 to Sep 2021</div>
+<div style="flex: 1 1 400px; min-width: 0">
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 22px; line-height: 1.3">Peer mentor and private tutor</h3>
+<p style="margin: 4px 0 0; font-weight: 500; color: #2CD4C6">BRAC University and freelance</p>
+<ul style="margin: 16px 0 0; padding-left: 20px; color: #97A3B3; display: flex; flex-direction: column; gap: 8px">
+<li>Led exam-preparation study groups as a BRAC University peer mentor.</li>
+<li>Tutored Grade 8 students in Mathematics, Physics and ICT.</li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section style="background: #0B0F14">
+<div style="max-width: 1240px; margin: 0 auto; padding: 88px clamp(20px, 4vw, 48px); box-sizing: border-box">
+<p style="margin: 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 14px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #2CD4C6">08 / Beyond the screen</p>
+<h2 style="margin: 10px 0 0; max-width: 760px; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: clamp(30px, 4vw, 44px); line-height: 1.15; letter-spacing: -0.02em">Community and teaching</h2>
+<div style="margin-top: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 22px">
+<div style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 28px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; color: #8794A5">2023 to present</div>
+<h3 style="margin: 6px 0 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 19px; line-height: 1.3">Digital inclusion and menstrual health support</h3>
+<p style="margin: 10px 0 0; color: #97A3B3; font-size: 16px">Helping adolescent girls and women reach menstrual health information through the Ananya app and awareness activities with WaterAid Bangladesh.</p>
+</div>
+<div style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 28px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; color: #8794A5">2020 to 2021</div>
+<h3 style="margin: 6px 0 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 19px; line-height: 1.3">Secretary of Performance, BRAC University Cultural Club</h3>
+<p style="margin: 10px 0 0; color: #97A3B3; font-size: 16px">Coordinated the club's cultural programmes.</p>
+</div>
+<div style="background: #11161D; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; padding: 28px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; color: #8794A5">2014 to 2017</div>
+<h3 style="margin: 6px 0 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 19px; line-height: 1.3">Bangladesh Catholic Students' Movement</h3>
+<p style="margin: 10px 0 0; color: #97A3B3; font-size: 16px">Supported youth seminars on leadership and community participation.</p>
+</div>
+</div>
+</div>
+</section>
+
+
+<section id="contact" style="background: #0B0F14; color: #E6EDF3; border-top: 1px solid rgba(255,255,255,0.09)">
+<div style="max-width: 1240px; margin: 0 auto; padding: 96px clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
+<div style="flex: 1 1 440px; min-width: 0">
+<p style="margin: 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 14px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #2CD4C6">09 / Contact</p>
+<h2 style="margin: 10px 0 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 700; font-size: clamp(34px, 5vw, 60px); line-height: 1.08; letter-spacing: -0.025em; color: #FFFFFF">Let's talk research.</h2>
+<p style="margin: 22px 0 0; max-width: 560px; color: #97A3B3">I am happy to talk about supervision, funded positions and collaborations. Email is the quickest way to reach me.</p>
+<div style="margin-top: 32px; display: flex; flex-wrap: wrap; gap: 14px">
+<a href="mailto:swadeshmollah@gmail.com" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 28px; border-radius: 3px; background: #2CD4C6; color: #04201E; font-weight: 600; font-size: 14px; letter-spacing: 0.04em">swadeshmollah@gmail.com</a>
+<a href="assets/Swadesh_Ponuel_CV_Academic.pdf" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 28px; border-radius: 3px; border: 1px solid #2CD4C6; color: #FFFFFF; font-weight: 600; font-size: 16px">Download CV</a>
+</div>
+</div>
+<div style="flex: 1 1 300px; min-width: 0; max-width: 420px; display: flex; flex-direction: column; gap: 4px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 15px">
+<div style="color: #2CD4C6; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; padding-bottom: 8px">Find me online</div>
+<a href="https://www.linkedin.com/in/ponuel-mollah-swadesh-499424177/" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; border-bottom: 1px solid rgba(255,255,255,0.10); color: #FFFFFF">LinkedIn<span>↗</span></a>
+<a href="https://github.com/Swadesh1997" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; border-bottom: 1px solid rgba(255,255,255,0.10); color: #FFFFFF">GitHub<span>↗</span></a>
+<a href="https://www.researchgate.net/profile/Ponuel-Swadesh" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; border-bottom: 1px solid rgba(255,255,255,0.10); color: #FFFFFF">ResearchGate<span>↗</span></a>
+</div>
+</div>
+</section>
+
+
+<footer style="background: #05070A; color: #8794A5; border-top: 1px solid rgba(255,255,255,0.09)">
+<div style="max-width: 1240px; margin: 0 auto; padding: 28px clamp(20px, 4vw, 48px); padding-bottom: calc(28px + env(safe-area-inset-bottom, 0px)); box-sizing: border-box; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px; font-size: 14px">
+<span>© 2026 Ponuel Mollah Swadesh. Dhaka, Bangladesh.</span>
+<a href="#home" style="display: inline-flex; align-items: center; min-height: 44px; color: #E6EDF3; font-weight: 500">Back to top ↑</a>
+</div>
+</footer>
+
+</div>
+<script>
+(function(){
+  var on="min-height:44px; padding:0 18px; border-radius:2px; border:1px solid #2CD4C6; background:rgba(44,212,198,0.10); color:#2CD4C6; font-family:'JetBrains Mono', ui-monospace, monospace; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; cursor:pointer", off="min-height:44px; padding:0 18px; border-radius:2px; border:1px solid rgba(255,255,255,0.14); background:transparent; color:#97A3B3; font-family:'JetBrains Mono', ui-monospace, monospace; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; cursor:pointer";
+  function wire(attr,card,key){
+    var btns=document.querySelectorAll('['+attr+']'), cards=document.querySelectorAll(card);
+    function set(id){
+      btns.forEach(function(b){var a=b.getAttribute(attr)===id;b.setAttribute('style',a?on:off);b.setAttribute('aria-pressed',a?'true':'false');});
+      cards.forEach(function(c){c.style.display=(id==='all'||c.getAttribute(key)===id)?'':'none';});
+    }
+    btns.forEach(function(b){b.addEventListener('click',function(){set(b.getAttribute(attr));});});
+    set('all');
+  }
+  wire('data-pubf','[data-status]','data-status');
+  wire('data-projf','[data-theme]','data-theme');
+})();
+</script>
 </body>
 </html>
