@@ -16,4 +16,5 @@ Then open http://localhost:8000.
 
 ## Deploy
 
-Vercel serves the repository root as a static site. No build command or output folder is needed.
+Hosted with GitHub Pages at https://swadesh1997.github.io (repository name must be `Swadesh1997.github.io`).
+In Settings, then Pages, choose "Deploy from a branch", `main` and `/ (root)`. No build step is needed.

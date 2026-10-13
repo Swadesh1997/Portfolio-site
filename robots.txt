@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /old-site/
 
-Sitemap: https://portfolio-site-bay-chi.vercel.app/sitemap.xml
+Sitemap: https://swadesh1997.github.io/sitemap.xml
